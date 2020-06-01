@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "name": "my-container"
+    },
+    "image":{
+        "image": "alpine"
+    },
+    "command": [
+        "top"
+    ],
+    "log_path":"my-container.log",
+    "linux": {
+        "security_context": {
+            "privileged": false
+        },
+        "resources": {
+            "cpu_shares": 128,
+            "memory_limit_in_bytes": 67108864
+        }
+    }
+}

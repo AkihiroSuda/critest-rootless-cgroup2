@@ -1,0 +1,15 @@
+{
+    "metadata": {
+        "name": "my-sandbox",
+        "namespace": "default",
+        "attempt": 1,
+        "uid": "hdishd83djaidwnduwk28bcsb"
+    },
+    "log_directory": "/tmp",
+    "linux": {
+        "cgroup_parent": "user.slice",
+        "security_context": {
+            "privileged": false
+        }
+    }
+}
