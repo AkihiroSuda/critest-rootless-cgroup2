@@ -32,5 +32,5 @@ exec systemd-run --user -t --same-dir --unit=containerd -E PATH=$BIN:$PATH \
 	--net=slirp4netns --disable-host-loopback \
 	--copy-up=/etc --copy-up=/run --copy-up=/var/lib \
 	--propagation=rslave \
-	--state-dir=/run/user/1001/rootlesskit-containerd \
+	--state-dir=$XDG_RUNTIME_DIR/rootlesskit-containerd \
 	sh -c "rm -rf /run/containerd /run/netns /run/xtables.lock /var/lib/cni; PATH=$BIN:$PATH containerd -c /tmp/config.toml"
