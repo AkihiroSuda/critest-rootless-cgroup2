@@ -13,7 +13,7 @@ curl -o bin/slirp4netns -sSL https://github.com/rootless-containers/slirp4netns/
 chmod +x bin/slirp4netns
 
 : Downloading containerd
-curl -sSL  https://github.com/kind-ci/containerd-nightlies/releases/download/containerd-1.4.0-beta.1-6-gd9809bbb/containerd-1.4.0-beta.1-6-gd9809bbb.linux-amd64.tar.gz | tar xzv -C bin --strip-components=1 bin/containerd bin/containerd-shim-runc-v2 bin/ctr
+curl -sSL https://github.com/kind-ci/containerd-nightlies/releases/download/containerd-1.4.0-beta.1-8-g62dd1411/containerd-1.4.0-beta.1-8-g62dd1411.linux-amd64.tar.gz | tar xzv -C bin --strip-components=1 bin/containerd bin/containerd-shim-runc-v2 bin/ctr
 
 : NOTE: CRI-O is not supported yet
 
